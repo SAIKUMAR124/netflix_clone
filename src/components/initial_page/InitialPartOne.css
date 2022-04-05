@@ -1,0 +1,66 @@
+.Initial--h-w {
+  height: 97vh;
+  width: 100%;
+}
+
+.BlackEffect {
+  background: radial-gradient(circle, transparent 10%, black);
+  z-index: -1;
+}
+
+.InitialPartOne {
+  border-bottom: 8px solid #222;
+}
+
+.InitialPartOne--background_Image{
+  background-image: url("../../../public/images/Netflix_Initial_background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.InitialHeader{
+  position: absolute;
+  top: 10px;
+  width: 100%;
+}
+
+.InitialPartOne--container {
+  position: absolute;
+  top: 0px;
+  color: white;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.InitialPartOne--content {
+  width: 90%;
+}
+
+.InitialPartOne--content > h1 {
+  font-size: 1.7rem;
+  text-align: center;
+
+}
+
+.InitialPartOne--content > .sub-heading {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-align: center;
+
+}
+
+.InitialPartOne--content > .email-heading {
+  font-size: 1.125rem;
+  font-weight: 400;
+  padding: 0 5%;
+  text-align: center;
+
+}
+

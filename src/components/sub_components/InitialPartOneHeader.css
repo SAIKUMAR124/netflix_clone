@@ -1,0 +1,23 @@
+.InitialPartOneHeader{
+    height: 100px;
+    margin: 0 5%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.InitialNetflix-icon{
+    color: #e50914;
+    font-size: 2rem;
+}
+
+.InitialNetflix-btn{
+    padding: 4px 8px;
+}
+
+.InitialNetflix-btn > button{
+    color: white;
+    background-color: #e50914;
+    padding: 0.25rem 0.5rem;
+    border: none;
+}
