@@ -1,0 +1,32 @@
+.child-profile-img {
+  width: 100%;
+}
+
+.content-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content-center > h1{
+  font-size: 1.625rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.content-center > p{
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1024px) {
+  .flex-di {
+    width: 50%;
+  }
+  .child-profile-img {
+    height: 380px;
+    width: 100%;
+  }
+}

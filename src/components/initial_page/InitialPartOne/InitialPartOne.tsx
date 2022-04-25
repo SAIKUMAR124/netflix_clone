@@ -32,7 +32,6 @@ const InitialPartOne = () => {
       .catch((error) => console.log(error));
   }, []);
 
-
   // if isLoading is true return Loading...
   if (isLoading) {
     return <div>Loading...</div>;
