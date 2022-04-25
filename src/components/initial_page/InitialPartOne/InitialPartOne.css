@@ -1,5 +1,5 @@
 .Initial--h-w {
-  height: 97vh;
+  height: 80vh;
   width: 100%;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .InitialPartOne--background_Image{
-  background-image: url("../../../public/images/Netflix_Initial_background.png");
+  background-image: url("../../../../public/images/Netflix_Initial_background.png");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;

@@ -1,8 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import InitialPartOneEmail from "../sub_components/InitialPartOneEmail";
+import InitialPartOneEmail from "../../sub_components/InitialPartOneEmail";
 import "./InitialPartOne.css";
-import InitialPartOneHeader from './../sub_components/InitialPartOneHeader';
+import InitialPartOneHeader from '../../sub_components/InitialPartOneHeader';
 
 // State types
 interface EmailPartOneState {
