@@ -1,0 +1,15 @@
+.frequentlyAQ{
+    margin-bottom: 0.4rem;
+}
+
+.FrequentlyAskedQuestions {
+    padding: 50px 0;
+  }
+
+@media screen and (min-width: 1024px) {
+  .FrequentlyAskedQuestions {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+}
