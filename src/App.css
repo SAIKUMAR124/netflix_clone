@@ -4,3 +4,30 @@
   box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
 }
+
+.border{
+  border: 2px solid red;
+}
+
+.flex{
+  display: flex;
+}
+
+.space-between{
+  display: flex;
+  justify-content: space-between;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.text-center{
+  text-align: center;
+}
