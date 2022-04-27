@@ -9,6 +9,9 @@ interface EmailForm {
 const InitialPartOneEmail = () => {
   return (
     <div>
+      <div className="email-heading">
+        Ready to watch? Enter your email to create or restart your membership
+      </div>
       <Formik<EmailForm>
         initialValues={{ email: "" }}
         onSubmit={(values, actions) => {
@@ -33,20 +36,22 @@ const InitialPartOneEmail = () => {
           errors,
         }) => (
           <form onSubmit={handleSubmit}>
-            <input
-              type="email"
-              name="email"
-              placeholder="Email address"
-              value={values.email}
-              onChange={handleChange}
-              onBlur={handleBlur}
-              className="InitialPartOne--EmailInput"
-            />
-            {touched.email && errors.email !== "" ? (
-              <div className="InitialPartOne--EmailError">{errors.email}</div>
-            ) : null}
-            <div className="InitialPartOne--EmailButton">
+            <div className="InitialPartOne--EmailContainer">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email address"
+                value={values.email}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                className="InitialPartOne--EmailInput"
+              />
+              {touched.email && errors.email !== "" ? (
+                <div className="InitialPartOne--EmailError">{errors.email}</div>
+              ) : null}
+              <div className="InitialPartOne--EmailButton">
                 <button type="submit">Get Started</button>
+              </div>
             </div>
           </form>
         )}
