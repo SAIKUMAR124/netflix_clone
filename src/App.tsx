@@ -6,10 +6,10 @@ import Initial_page from "./components/initial_page/index";
 
 function App() {
   return (
-    <div>
+    <main>
       <Initial_page />
       
-    </div>
+    </main>
   );
 }
 

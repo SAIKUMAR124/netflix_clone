@@ -17,7 +17,7 @@ const Accordian = ({ question, answer }: AccordianProps) => {
         onClick={() => setOpen(!open)}
       >
         <h2 className="accordian-title">{question}</h2>
-        <button className="center accordian-btn-bg">
+        <button className="center accordian-btn-bg" aria-label="Icon to open or close accordian">
           {open ? (
             <AiOutlineClose className="accordian-icon" />
           ) : (

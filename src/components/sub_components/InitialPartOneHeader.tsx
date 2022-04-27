@@ -6,7 +6,7 @@ const InitialPartOneHeader = () => {
   return (
     <div className="InitialPartOneHeader">
       <div className="InitialNetflix-icon">
-        <SiNetflix />
+        <SiNetflix aria-label="Netflix Logo" />
       </div>
       <div className="InitialNetflix-btn"><button>Sign In</button></div>
     </div>
