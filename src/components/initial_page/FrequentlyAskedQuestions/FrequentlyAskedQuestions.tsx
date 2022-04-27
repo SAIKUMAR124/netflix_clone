@@ -30,7 +30,6 @@ const FrequentlyAskedQuestions = () => {
       .then((res) => {
         setData(res.data);
         setIsLoading(false);
-        console.log(data);
       })
       .catch((error) => console.log(error));
   }, []);
