@@ -31,3 +31,7 @@
 .text-center{
   text-align: center;
 }
+
+.main-padding{
+  padding: 70px 45px;
+}

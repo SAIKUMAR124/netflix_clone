@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { string } from "yup";
 import Accordian from "../../../common/Accordian/Accordian";
+import InitialEmail from "../../../common/InitialEmail/InitialEmail";
 import "./FrequentlyAskedQuestions.css";
 
 interface FrequentlyAQProps {
@@ -35,12 +36,14 @@ const FrequentlyAskedQuestions = () => {
   }, []);
 
   return (
-    <div className="FrequentlyAskedQuestions">
+    <div className="FrequentlyAskedQuestions main-padding">
       {isLoading ? (
         <div>Loading...</div>
       ) : (
         <div>
-          <h1 className="text-center frequentlyAQ">Frequently Asked Questions</h1>
+          <h1 className="text-center frequentlyAQ">
+            Frequently Asked Questions
+          </h1>
           <div>
             {data.map((details) => (
               <Accordian key={details.id} {...details} />
@@ -48,6 +51,9 @@ const FrequentlyAskedQuestions = () => {
           </div>
         </div>
       )}
+      <div className="FQA-email">
+        <InitialEmail/>
+      </div>
     </div>
   );
 };

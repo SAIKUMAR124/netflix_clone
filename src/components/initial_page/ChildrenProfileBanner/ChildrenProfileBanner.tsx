@@ -28,7 +28,7 @@ const ChildrenProfileBanner = () => {
   }, []);
 
   return (
-    <div className="children-profile-banner">
+    <div className="children-profile-banner main-padding">
     <SwapContent>
       <div className="content-center flex-di">
         <h1>{data.heading}</h1>

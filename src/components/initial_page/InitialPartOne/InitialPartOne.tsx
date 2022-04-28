@@ -36,7 +36,7 @@ const InitialPartOne = () => {
   } else {
     // else return the content
     return (
-      <div className="InitialPartOne InitialPartOne--background_Image">
+      <div className="InitialPartOne InitialPartOne--background_Image ">
         <div className="BlackEffect Initial--h-w"></div>
 
         <div className="InitialPartOne--container Initial--h-w">
