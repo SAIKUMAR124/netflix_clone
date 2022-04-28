@@ -1,10 +1,14 @@
-.frequentlyAQ{
-    margin-bottom: 0.4rem;
+.frequentlyAQ {
+  margin-bottom: 0.4rem;
 }
 
 .FrequentlyAskedQuestions {
-    padding: 50px 0;
-  }
+  padding: 50px 0;
+}
+
+.FQA-email {
+  margin-top: 1.5rem;
+}
 
 @media screen and (min-width: 1024px) {
   .FrequentlyAskedQuestions {
