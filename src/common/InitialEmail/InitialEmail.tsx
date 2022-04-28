@@ -1,12 +1,13 @@
 import { Formik } from "formik";
 import * as yup from "yup";
-import "./InitialPartOneEmail.css";
+import React from "react";
+import "./InitialEmail.css";
 
 interface EmailForm {
   email: string;
 }
 
-const InitialPartOneEmail = () => {
+const InitialEmail = () => {
   return (
     <div>
       <div className="email-heading">
@@ -36,20 +37,22 @@ const InitialPartOneEmail = () => {
           errors,
         }) => (
           <form onSubmit={handleSubmit}>
-            <div className="InitialPartOne--EmailContainer">
-              <input
-                type="email"
-                name="email"
-                placeholder="Email address"
-                value={values.email}
-                onChange={handleChange}
-                onBlur={handleBlur}
-                className="InitialPartOne--EmailInput"
-              />
-              {touched.email && errors.email !== "" ? (
-                <div className="InitialPartOne--EmailError">{errors.email}</div>
-              ) : null}
-              <div className="InitialPartOne--EmailButton">
+            <div className="InitialEmail-container text-center">
+              <div className="InitialEmail-input-container">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email address"
+                  value={values.email}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  className="InitialEmail-input"
+                />
+                {touched.email && errors.email !== "" ? (
+                  <div className="InitialEmail-error">{errors.email}</div>
+                ) : null}
+              </div>
+              <div className="InitialEmail-button">
                 <button type="submit">Get Started</button>
               </div>
             </div>
@@ -60,4 +63,4 @@ const InitialPartOneEmail = () => {
   );
 };
 
-export default InitialPartOneEmail;
+export default InitialEmail;

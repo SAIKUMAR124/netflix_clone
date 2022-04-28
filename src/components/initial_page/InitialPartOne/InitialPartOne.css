@@ -61,7 +61,7 @@
 
   .InitialPartOne--content > h1 {
     font-size: 3.125rem;
-    width: 50%;
+    max-width: 640px;
     margin: 0 auto;
   }
 }

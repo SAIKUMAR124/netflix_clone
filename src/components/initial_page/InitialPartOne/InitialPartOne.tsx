@@ -1,8 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import InitialPartOneEmail from "../../sub_components/InitialPartOneEmail";
-import "./InitialPartOne.css";
+import InitialEmail from "../../../common/InitialEmail/InitialEmail";
 import InitialPartOneHeader from "../../sub_components/InitialPartOneHeader";
+import "./InitialPartOne.css";
 
 // State types
 interface EmailPartOneState {
@@ -48,7 +48,7 @@ const InitialPartOne = () => {
             <h2 className="sub-heading">{data.sub_heading}</h2>
 
             <div>
-              <InitialPartOneEmail />
+              <InitialEmail />
             </div>
           </div>
         </div>
